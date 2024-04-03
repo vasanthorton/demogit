@@ -1,0 +1,481 @@
+ 
+    -----------------------------------java Script ---------------------------------
+	
+	--variable--
+	myworls="vasanth" 
+	
+	-------methods ------
+     
+	 1.string methods
+	 
+		 *length
+	     *charAt("3")  it show the varialbes position in words 
+		 *indexof(" va")  it show the variables position in count
+		 *lastindexof("an") it show the last "an" position in the variablaes 
+		 *slice (1,5) it show the 1 to 5 position letters like  "asan"  but it give the 4 letters because they can't take the last letter
+		 *toUpperCase()  it convert the varaible small letter to capital letter 
+		 *toLowerCase() it convert capital to small letters 
+		 *includes("") it is used to check the variables  (((it works on boolean type )))
+		 *split("n")-->(vasanth)   it is used to split the words like   'vasa' , 'th' 
+      2.Numbers 
+	  
+	     * (variables)myNumber --> integer values (10)
+		 * (variables)myFloat  --> decimal values like (10.09)
+		 * isInteger --> it show the variable is integer or string  like integer means true ,,string means false
+		 *	parseFloat --> this method also a decimal method but it decline the letters like (10.22eee) but it give the output is ((10.22)) only
+		* tofixed  --> is used to fixed the value.  like (122.87887)   => .tofixed(3) = 122.878
+=		 * toString ---> it convert number to (string).
+		 
+		 
+		 3. isNan  (is Not a number)     ----> ( they have two types )   This Are True Or Fals Method 
+					*number.isnan
+					* .isNan
+					
+					
+					
+			As!s&cp032023		
+					
+		4.Math --> means Round off
+		
+		     *trunc
+			 *round  -- > it is used to convert the round decimal values like 3.4  == 3     and 3.6 == 4       round measure after the point values
+			 *ceil  --> it is used to find the decimals like after the point value is higher or lower its shows  3.2  == 4
+			 * floor --> it is used to find the numbers.
+			 
+			 
+			 *pow --> it is used to square the values is (5)² = 25    but we give the values in code is   math.pow(5,2)   --> it give the values
+			 *min --> it takes the minimum values 
+			 *max --> it gives the maximum values
+			 *random --> it will take the ramdom values
+			 
+			 ------------------------------------------------------------------
+			 
+			 
+			 
+			 console.log(this.myvariables.charAt(Math.floor(Math.random()*this.myvariables.length)));-- > this is used to identidied the ramdon letters in the varialbes
+
+
+
+
+            *** if ==> conditions 
+
+
+
+
+	5. Ternary operators  ---> it is also a if condition (it is very easy to used)
+	
+	
+	condition ? expertrue : experfalse;   ----> it is index.
+	
+	
+	
+	example::::
+	
+	
+	examscores =50
+	
+	let grade = examscores ===51 ?"welcome":"not welcome" 
+    console.log(grade);
+    
+	
+	output:: not welcome
+	
+	
+	6. Alert message popup (USER INPUT)
+	
+	     * alert ("hello")
+		 *let boolean = comfirm(hello)  --> it gives the input like true or false.  
+		 *prompt -->it is used to type in alert popup 
+		 
+		 ex... 1.
+		 (
+		 let char = prompt("hello")
+		      consol.log(char)
+		 
+		 output:
+		        open the input box in alert 
+		 )
+		 
+		 ex..2.  it is used to avoild the null values
+		 ( 
+		 let char = prompt("hello")
+		      consol.log(char ?? "pls type enetr ur name")
+		 )
+		 
+		  
+		  
+		  *?? null colapsing operator --> it see the null then print the variables
+		 
+		 
+		 * trim() this function is used to remove the unvanted blank space 
+		 
+		 
+		 
+		 
+		 
+		 
+------------------------------------------------loop-------------------------------------
+
+	1.while loop ----- 
+let i=0;
+while(i<=10)
+{
+log(i)
+i=i+1;
+}
+	2.do while -----
+
+
+
+	3.for   (for loop is mostly used )
+	        
+			*(break) is used to stop the loop
+			*(continue) is used to break the condition and loop the next condition
+			
+			
+			
+	4.forEach
+
+ex.
+ properfun() {
+    console.log("WORKING");
+
+    let emails = ["vasanth@gmail.com", "rangasan221998@gmail.com", "santhosh.technify@gmail.com"];
+    let editedEmails = [];
+
+
+    emails.forEach(element => {
+     var emailEdit= element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
+      console.log(emailEdit);
+    });
+
+  }		
+  
+  
+  ------------------------------array---------------------------------------
+  => array is a storage of container 
+			they add a        1.(push method--->.push is used to add the array valuesin last position)
+					   2.unshift  --->.unshift is used to add the array values in the first position
+					   3. pop method--->.pop is uded to delete the last array position
+						4.shift method ---> .shift is used to delete the first array position 
+						5. splice --> is used to remove,add and replace the array index.
+						  ex..
+						  myarray.splice(1,0,"vasanth");
+						  6.     (... this trible dot is a spread operator it is used to join the two array )like [...1,...2]
+						  
+						  7. join (or)toString --> join is used to convert array to string (any method like stirng ,int ,boolean anything convert to string)
+						  8.split(',') --> split is used to convert string to array 
+						  
+						  
+						  
+						 
+
+
+
+-----------------------------------------objects-------------------------------------------------
+
+         An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method. Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life.
+
+
+*console.log(Object.key(cars));  -> object.key is used to find the key in objects.
+*console.log(Object.values(cars));  --> object.value is used to find the key values in object.
+*   const demo = object.create(); --> object.create is used to defined the object values from one object to another object
+
+*   hasOwnProperty() --> its is used to check the values in the object (like its true OR false)
+
+EXAMPLE  ===>
+
+const cars:Record<string, string> ={
+  car1:"bmw",
+  car2:"benzee",
+  car3:"audi",
+  car4:"shift"
+};
+
+
+
+
+In objects we stored string , arrays , functions values also .
+----------------------------------------------------------------------
+
+delete cars['car1'];
+console.log(cars.hasOwnProperty("car1"));
+
+const obj={}
+
+
+const myobjectA={
+
+  sub:"english",
+  gender:"male",
+
+  class:{
+    students:"both",
+    teachers:999
+  },
+
+  principal:["male","female"],
+  action: function demoFun(){
+    return "hello"
+  }
+
+
+};
+
+
+
+
+
+
+===============================in object using the {for in} method=============
+
+
+
+const cars:Record<string, string> ={
+  car1:"bmw",
+  car2:"benzee",
+  car3:"audi",
+  car4:"shift"
+};
+
+console.log(Object.values(cars));
+
+
+
+for( let gaudi in cars){
+  console.log(`${gaudi}: it's a ${cars[gaudi]}`);
+
+ 
+  
+}
+
+
+
+
+
+const cars:Record<string, string> ={
+  car1:"bmw",
+  car2:"benzee",
+  car3:"audi",
+  car4:"shift"
+};
+
+// console.log(Object.values(cars));
+
+
+
+for( let gaudi in cars){
+  if(gaudi == "car2"){
+    console.log(`${gaudi}:${cars[gaudi]}`);
+
+  }
+}
+this is used to take the one values
+-------------destructuring methods in object --------
+
+*   const cars:Record<string, string> ={
+  car1:"bmw",
+  car2:"benzee",
+  car3:"audi",
+  car4:"shift"
+};
+
+const {car2:thisismycar2}=cars                                     ---> i assigned the car2 value in thisismycar2 (variable) =cars is object name
+console.log(`this is my favourite car ====>${thisismycar2}`);
+
+
+
+
+*
+
+
+const cars ={
+  car1:"bmw",
+  car2:"benzee",
+  car3:"audi",
+  car4:"shift"
+};
+
+
+const{car1:mycar}=cars;
+
+
+function demo({car2}:{car2:string}):string{
+  return car2;
+}
+
+console.log(demo(cars));
+
+
+
+
+------------------------ this method is used to show the js in html---------
+
+ let person = "John Doe";
+    let demoTag = document.getElementById("demo") as HTMLElement;
+    demoTag.innerHTML = person;
+    
+
+
+
+
+class ===> class is a collection of object  
+
+class ==> class is a object creating blueprint 
+
+
+
+
+====> this is how to connect to parent class to child class 
+
+export class pizzafun{
+  size: any;
+  crust: any;
+  method: any;
+
+  constructor(script: any){
+    this.size= "medium";
+    this.crust="original"
+
+    this.method=script
+  }
+
+
+  demofun(){
+        console.log("man===="+this.crust , this.method);
+        
+  }
+
+
+}
+
+export class specialpizza extends pizzafun {
+  jam: any;
+
+  constructor(){
+     
+    super("");
+      this.jam="more"
+  }
+
+  slice(){
+    console.log(`our ${this.jam} and the ${this.size}`);
+    
+  }
+
+}
+
+
+
+============================================================JSON================
+   1. JSON.stringfy --> is used to convert object to string 
+   2. JSON.Parse  --> is used to convert string to objects .
+
+
+=================================dom ==> Document Object Model=================
+
+1. getelementbyid  ---> it is used to control the ("view2") ->id
+
+
+	const view2 = document.getElementById("view2");
+
+  console.log(view2);
+  
+  if( view2 != null){
+    view2.style.display="none";
+  }
+
+2. queryselector --> its also the same getelementbyid method(#view)
+
+3.getElementsByClassName --> it is used to control the class (class= "demo")
+
+
+
+mamm(){
+  const view2 = document.getElementsByClassName("view2");
+
+  console.log(view2);
+  
+  if( view2.length>0){
+
+    const first = view2;
+    view2.style.display="none";
+  }
+}
+
+4.queryselectorAll  -> it is used to select the tags like div  in (NodeList(12) [div, div, div, div, div, div, div, div, div, div, div, div])
+
+   
+mamm(){
+  const view2 = document.querySelectorAll("div");
+
+  console.log(view2);
+  
+}
+
+
+5.getElementsByTagName --> it is used to select the tags like div  in (HTMLCollection(12) [div, div, div, div, div, div, div, div, div, div, div, div])
+
+
+mamm(){
+  const view2 = document.getElementsByTagName("div");
+
+  console.log(view2);
+  
+}
+ 
+
+
+==============================Events ===============================
+
+  1. click is a events.
+
+
+
+
+  <main>
+  <div id='view3' style="width: 300px;height: 200px; border: 2px solid black; display: flex; justify-content: center; align-items: center; backdrop-filter: brightness(50%);">
+    <div class="black">
+      <h2>Angular App</h2>
+    </div>
+  </div>
+  </main>
+
+
+
+
+ 
+
+initApp() {
+  const view3 = document.querySelector("#view3") as HTMLElement;
+
+  if (view3) {
+    view3.addEventListener('click', (event: Event) => {
+      view3.style.backgroundColor = 'green';
+      view3.style.border = '5px solid white';
+    });
+
+    const div = view3.querySelector('div') as HTMLElement;
+
+    if (div) {
+      div.addEventListener('click', (event: Event) => {
+        div.style.backgroundColor = 'green';
+        div.style.border = '5px solid white';
+      });
+
+      const h2 = div.querySelector('h2') as HTMLElement;
+
+      if (h2) {
+        h2.addEventListener('click', (event: Event) => {
+          h2.style.color = 'black';
+          h2.style.backgroundColor="pink"
+        });
+      }
+    }
+  }
+}
+
+
+
+
+
